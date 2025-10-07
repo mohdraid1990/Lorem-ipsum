@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem ipsum </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="images/Слой 9 1.png">
+    <link rel="preload" as="image" href="images/main.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Шапка сайта (Header) -->
+    <header class="header">
+      <nav class="nav">
+        <input type="checkbox" id="menu-toggle" class="nav__toggle" />
+        <label for="menu-toggle" class="nav__icon">
+          <span class="nav__hamburger">&#9776;</span>
+          <span class="nav__close">&#10005;</span>
+        </label>
+
+        <div class="nav__logo">
+          <img src="images/logo.svg" alt="Логотип компании" />
+        </div>
+
+        <!-- Основное меню навигации -->
+        <ul class="nav__menu">
+          <li class="nav__item"><a href="#" class="nav__link">Бизнес</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Цены</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Оформить заказ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Основной заголовок и призыв к действию -->
+      <div class="hero">
+        <h1 class="hero__title">
+          <span class="hero__accent">Lorem ipsum</span> dolor sit <br />
+          amet consectetur <span class="hero__accent">adipiscing</span>
+        </h1>
+        <div class="hero__desc">
+          <h2 class="hero__subtitle">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+          </h2>
+          <p class="hero__text">- Totam rem aperiam eaque ipsa</p>
+          <p class="hero__text">- Sit voluptatem accusantium doloremque laudantium</p>
+          <p class="hero__text">- Sed ut perspiciatis, unde omnis iste natus error</p>
+        </div>
+        <div class="hero__actions">
+          <button class="btn btn--primary">заказать</button>
+          <button class="btn btn--secondary">подробнее</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Основной контент страницы (Main Content) -->
+    <main class="main">
+      <div class="container">
+        <div class="order">
+          <h1 class="order__title">Оформление <span class="order__accent">Заказа</span></h1>
+          <p class="order__desc">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </p>
+        </div>
+      </div>
+      
+      <!-- Блок с этапами работы -->
+      <div class="steps">
+        <div class="steps__container">
+          <div class="step">
+            <div class="step__icon">
+              <img src="./images/serch.svg" alt="Поиск" loading="lazy" decoding="async" />
+            </div>
+            <div class="step__text">
+              <p>Lorem ipsum dolor sit <br />amet</p>
+            </div>
+          </div>
+          
+          <div class="steps__divider">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+
+          <div class="step">
+            <div class="step__icon">
+              <img src="./images/per.svg" alt="Персонализация" loading="lazy" decoding="async" />
+            </div>
+            <div class="step__text">
+              <p>Сonsecteturadipiscing elit</p>
+            </div>
+          </div>
+          
+          <div class="steps__divider">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+
+          <div class="step">
+            <div class="step__icon">
+              <img src="./images/file.svg" alt="Документы" loading="lazy" decoding="async" />
+            </div>
+            <div class="step__text">
+              <p>Sed do eiusmod tempor</p>
+            </div>
+          </div>
+          
+          <div class="steps__divider">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+
+          <div class="step">
+            <div class="step__icon">
+              <img src="./images/message-1.svg" alt="Сообщения" loading="lazy" decoding="async" />
+            </div>
+            <div class="step__text">
+              <p>Esse cillum dolore eu <br />fugiat</p>
+            </div>
+          </div>
+          
+          <div class="steps__divider">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+
+          <div class="step">
+            <div class="step__icon">
+              <img src="./images/money-1.svg" alt="Оплата" loading="lazy" decoding="async" />
+            </div>
+            <div class="step__text">
+              <p>
+                Excepteur sint occaecat <br />
+                cupidatat non proidentt
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Форма заказа -->
+      <div class="form">
+        <form class="form__container" action="#" method="post">
+          <div class="custom-dropdown">
+            <div class="dropdown__selected">Выберите тип системы</div>
+            <ul class="dropdown__options">
+              <li>Sed ut perspiciatis</li>
+              <li>Nemo enim ipsam</li>
+              <li>Et harum quidem</li>
+              <li>Temporibus autem</li>
+              <li>Itaque earum rerum</li>
+            </ul>
+            <img src="./images/arrooow.svg" alt="Стрелка" class="dropdown__arrow" />
+          </div>
+
+          <input type="hidden" name="systemType" id="systemType" value="" />
+
+          <input type="email" name="email" placeholder="Ваш e-mail" class="form__input" required />
+          <input type="text" name="name" placeholder="Ваше имя" class="form__input" required />
+
+          <div class="range">
+            <div class="range__labels">
+              <p class="range__text">Sed ut perspiciatis, unde omnis iste natus</p>
+              <p class="range__percentage" id="percentage">75%</p>
+            </div>
+
+            <div class="range__container">
+              <input
+                type="range"
+                id="progressRange"
+                name="progress"
+                min="0"
+                max="100"
+                value="75"
+                class="range__slider"
+              />
+              <div class="form__actions">
+                <button type="button" class="btn btn--file" id="attachTrigger">
+                  <img src="./images/file-2.svg" alt="Файл" />
+                  Прикрепить файл
+                </button>
+                <input type="file" name="attachment" id="attachment" style="display:none" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form__submit">
+            <button type="submit" class="btn btn--submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Подвал сайта (Footer) -->
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__copyright">© 2018 «LoremIpsum.net» Все права защищены.</p>
+        
+        <div class="footer__divider"></div>
+
+        <div class="footer__payments">
+          <p class="footer__payment">
+            <img src="./images/Frame 19.svg" alt="QIWI" />
+            Qiwi wallet
+          </p>
+
+          <p class="footer__payment">
+            <img src="./images/money.svg" alt="Yandex Money" />
+            Yandex Money
+          </p>
+          
+          <p class="footer__payment">
+            <img src="./images/wqeb.svg" alt="Web Money" />
+            Web Money
+          </p>
+        </div>
+        
+        <div class="footer__divider"></div>
+
+        <div class="footer__contacts">
+          <a href="mailto:info@ipsum228.com" class="footer__contact">
+            <img src="./images/message.svg" alt="Email" />
+            info@ipsum228.com
+          </a>
+
+          <a href="#" class="footer__contact">
+            <img src="./images/kontakt.svg" alt="ВКонтакте" />
+            Мы вконтакте
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  },
+  "scripts": {
+    "sass:build": "sass style.scss style.css --no-source-map",
+    "sass:watch": "sass --watch style.scss:style.css --no-source-map",
+    "sass:build:prod": "sass style.scss style.css --style=compressed --no-source-map"
+  }
+}
